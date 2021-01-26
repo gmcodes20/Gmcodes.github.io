@@ -1,25 +1,23 @@
-window.onscroll = function () { myFunction() };
+const nav = document.querySelector('.nav__list');
+const harmburger = document.querySelector('.harmburger')
+const navList = document.querySelectorAll('.nav__items');
+// const line = 
 
-var header = document.querySelector(".headed");
-var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+harmburger.addEventListener('click', menuToggle);
+
+function menuToggle(e) {
+  nav.classList.toggle('open');
+  harmburger.classList.toggle('open')
+
+
+  e.preventDefault()
+
 }
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link');
 
-navToggle.addEventListener('click', () => {
-  document.body.classList.toggle('nav-open');
-});
-
-navLinks.forEach(link => {
+navList.forEach(link => {
   link.addEventListener('click', () => {
-    document.body.classList.remove('nav-open');
+    nav.classList.remove('open');
+    harmburger.classList.remove('open');
   })
 })
-

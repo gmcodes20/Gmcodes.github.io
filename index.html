@@ -14,8 +14,15 @@
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
     <!-- Used google fonts -->
-    <!-- Update these with your own fonts -->
+
     <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
@@ -25,196 +32,367 @@
   </head>
 
   <body id="bg-img">
-    <header class="headed">
+    <nav class="nav">
       <div class="logo">
-        <img src="./imgs/gmcodes.png" alt="Gmcodes" />
+        <code class="logo"> &lt;gmcodes/&gt; </code>
       </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__items"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__items">
-            <a href="#services" class="nav__link">Services</a>
-          </li>
-          <li class="nav__items">
-            <a href="#about" class="nav__link">About Me</a>
-          </li>
-          <li class="nav__items">
-            <a href="#work" class="nav__link">My Work</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <div class="harmburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <ul class="nav__list">
+        <li class="nav__items">
+          <a href="#home" class="nav__link">
+            <i class="fas fa-home"></i>
+            <span> Home</span>
+          </a>
+        </li>
+        <li class="nav__items">
+          <a href="#services" class="nav__link">
+            <i class="fas fa-toolbox"></i> Services</a
+          >
+        </li>
+        <li class="nav__items">
+          <a href="#about" class="nav__link">
+            <i class="fas fa-user"></i> About Me</a
+          >
+        </li>
+        <li class="nav__items">
+          <a href="#work" class="nav__link"
+            ><i class="fas fa-code"></i> Portfolio</a
+          >
+        </li>
+
+        <li class="nav__items">
+          <a
+            href="https://gmcodes.hashnode.dev/"
+            target="_blank"
+            class="nav__link"
+            ><i class="fas fa-rss"></i> Blog</a
+          >
+        </li>
+      </ul>
+    </nav>
+
     <!-- Introduction -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Godwin Martins, </strong>
+        <span> 💖 Hi , I am </span><strong>Godwin Martins, </strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">
-        A Web Developer, Designer and Blockchain Enthusiast
+        A Web Developer and everything in between
       </p>
+      <div class="icons">
+        <a href="https://twitter.com/gmcodes20"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://wa.me/message/52WREH2I5GT6F1"
+          ><i class="fab fa-whatsapp fa-2x"></i
+        ></a>
+        <a href="https://github.com/gmcodes20"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a href="https://www.instagram.com/superstarj4/"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/godwin-martins-990165204"
+          ><i class="fab fa-linkedin-in fa-2x"></i
+        ></a>
+      </div>
+
       <img src="./imgs/GmcS.jpg" alt="My Profile Picture" class="intro__img" />
     </section>
 
     <!-- My Services -->
     <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I Do</h2>
-      <div class="services">
-        <div class="service">
-          <h3>Design + Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            neque iste nulla ex soluta! Voluptate eligendi error distinctio
-            molestias recusandae voluptatem ad cumque debitis praesentium. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque
-            iste nulla ex soluta! Voluptate eligendi error distinctio molestias
-            recusandae voluptatem ad cumque debitis praesentium.
-          </p>
-        </div>
-        <!-- /service -->
+      <div class="container">
+        <h1 class="my-4">My Services</h1>
+        <p class="my-4">My Services includes but not limited to</p>
+        <br />
+        <!-- Start Marketing Icons section -->
+        <div class="row">
+          <!-- Start First column -->
+          <div class="col-lg-4 mb-4">
+            <div class="card-h-100 text-dark bg-light rounded">
+              <h4 class="card-header">Web Design</h4>
+              <div class="card-body">
+                <p class="card-body">
+                  I design Scalable website that are both user and mobile
+                  friendly. Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Molestias praesentium vitae obcaecati quos dolores. Ab
+                  ratione autem magnam facilis voluptas obcaecati tempora
+                  laboriosam cumque dicta corrupti. Repellat hic quos
+                  perferendis.
+                </p>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+          <!-- End first Column -->
 
-        <div class="service">
-          <h3>Data Science with Pyhton</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            neque iste nulla ex soluta! Voluptate eligendi error distinctio
-            molestias recusandae voluptatem ad cumque debitis praesentium. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque
-            iste nulla ex soluta! Voluptate eligendi error distinctio molestias
-            recusandae voluptatem ad cumque debitis praesentium.
-          </p>
-        </div>
-        <!-- /service -->
+          <!-- Start Second column -->
+          <div class="col-lg-4 mb-4">
+            <div class="card-h-100 text-dark bg-light rounded">
+              <h4 class="card-header">Web Development</h4>
+              <div class="card-body">
+                <p class="card-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                  consequatur sit officiis sed quia iste similique reiciendis
+                  dolore laboriosam. Libero fugit dicta in eligendi neque
+                  consectetur eum esse quas assumenda?
+                </p>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+          <!-- End Second Column -->
 
-        <div class="service">
-          <h3>WordPress</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            neque iste nulla ex soluta! Voluptate eligendi error distinctio
-            molestias recusandae voluptatem ad cumque debitis praesentium. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Aliquid neque
-            iste nulla ex soluta! Voluptate eligendi error distinctio molestias
-            recusandae voluptatem ad cumque debitis praesentium.
-          </p>
+          <!-- Start Third column -->
+          <div class="col-lg-4 mb-4">
+            <div class="card-h-100 text-dark bg-light rounded">
+              <h4 class="card-header">Maintainance</h4>
+              <div class="card-body">
+                <p class="card-body">
+                  This is my paragraph tag with some text. Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Sint esse minus quis amet
+                  corrupti ducimus, nesciunt, accusamus fugit reprehenderit
+                  pariatur animi consectetur? Enim quo vitae nihil, a nulla
+                  voluptatem dolorem.
+                </p>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
         </div>
-        <!-- /service -->
+        <!-- End third Column -->
       </div>
-      <!-- /services -->
-      <a href="#work" class="btn">My Work</a>
     </section>
 
     <!-- About Me -->
-
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Designer & developer based out of IYUKU
-      </p>
-
-      <div class="about-me__body">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi
-          fugiat ipsa. Sit enim adipisci dolores qui libero quae, quam sed
-          molestiae, iusto ea quia, minus voluptatum magni numquam ad. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit.
+    <div class="about-top">
+      <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+          A Designer/Developer from the Southern Part of Nigeria
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi
-          fugiat ipsa. Sit enim adipisci dolores qui libero quae, quam sed
-          molestiae, iusto ea quia, minus voluptatum magni numquam ad. sit.
-        </p>
-      </div>
 
-      <img src="./imgs/GmcS2.jpg" alt="" class="about-me__img" />
-    </section>
+        <div class="about-me__body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            excepturi fugiat ipsa. Sit enim adipisci dolores qui libero quae,
+            quam sed molestiae, iusto ea quia, minus voluptatum magni numquam
+            ad. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            excepturi fugiat ipsa. Sit enim adipisci dolores qui libero quae,
+            quam sed molestiae, iusto ea quia, minus voluptatum magni numquam
+            ad. sit.
+          </p>
+        </div>
+
+        <img src="./imgs/GmcS2.jpg" alt="" class="about-me__img" />
+      </section>
+    </div>
 
     <!-- My Work -->
-    <section class="my-work" id="work">
-      <h2 class="section__title">My works</h2>
-      <p class=".section__subtitle--work"></p>
+    <!-- Start Container -->
+    <div class="container my-work" id="work">
+      <!-- Start Breadcrumb -->
+      <h1 class="mt-4 mb-4 text-start">
+        <small>Checkout some of my </small>
+        <span class="portfolio-emp">Works </span>
+      </h1>
 
-      <div class="portfolio">
-        <!-- Portfolio item 01 -->
-        <div class="portfolio__item">
-          <a href="portfolio-item.html" class="">
-            <img src="./imgs/pf1.png" alt="" class="portfolio__img" />
-          </a>
-          <a href="#" class="btn-light">
-            <i class="fas fa-eye"> Project</i>
-          </a>
-          <a href="#" class="btn-dark">
-            <i class="fab fa-github"> Github</i>
+      <!-- End Breadcrumb -->
+
+      <!-- Start Project one -->
+      <div class="row">
+        <div class="col-md-7 mt-2">
+          <a href="#">
+            <img
+              src="./imgs/Be-Spoke Home.png"
+              class="img-fluid rounded mb-3 mb-md-0"
+              alt="image"
+            />
           </a>
         </div>
-
-        <!-- Portfolio item 01 -->
-        <div class="portfolio__item">
-          <a href="portfolio-item.html" class="">
-            <img src="./imgs/pf1.png" alt="" class="portfolio__img" />
-          </a>
-          <a href="#" class="btn-light">
-            <i class="fas fa-eye"> Project</i>
-          </a>
-          <a href="#" class="btn-dark">
-            <i class="fab fa-github"> Github</i>
-          </a>
-        </div>
-
-        <!-- Portfolio item 01 -->
-        <div class="portfolio__item">
-          <a href="portfolio-item.html" class="">
-            <img src="./imgs/pf1.png" alt="" class="portfolio__img" />
-          </a>
-          <a href="#" class="btn-light">
-            <i class="fas fa-eye"> Project</i>
-          </a>
-          <a href="#" class="btn-dark">
-            <i class="fab fa-github"> Github</i>
-          </a>
-        </div>
-
-        <!-- Portfolio item 01 -->
-        <div class="portfolio__item">
-          <a href="portfolio-item.html" class="">
-            <img src="./imgs/pf1.png" alt="" class="portfolio__img" />
-          </a>
-          <a href="#" class="btn-light">
-            <i class="fas fa-eye"> Project</i>
-          </a>
-          <a href="#" class="btn-dark">
-            <i class="fab fa-github"> Github</i>
-          </a>
-        </div>
-
-        <!-- Portfolio item 01 -->
-        <div class="portfolio__item">
-          <a href="portfolio-item.html" class="">
-            <img src="./imgs/pf1.png" alt="" class="portfolio__img" />
-          </a>
-          <a href="#" class="btn-light">
-            <i class="fas fa-eye"> Project</i>
-          </a>
-          <a href="#" class="btn-dark">
-            <i class="fab fa-github"> Github</i>
-          </a>
-        </div>
-
-        <!-- Portfolio item 01 -->
-        <div class="portfolio__item">
-          <a href="portfolio-item.html" class="">
-            <img src="./imgs/pf1.png" alt="" class="portfolio__img" />
-          </a>
-          <a href="#" class="btn-light">
-            <i class="fas fa-eye"> Project</i>
-          </a>
-          <a href="#" class="btn-dark">
-            <i class="fab fa-github"> Github</i>
-          </a>
+        <div class="col-md-5">
+          <h2>Be-Spoke</h2>
+          <p class="text-white">
+            This site is designed with HTML and bootstrap. Its mobile Friendly
+            and responsive
+          </p>
+          <a href="#" class="btn btn-primary">
+            <i class="fab fa-github"> Github</i></a
+          >
+          <a href="#" class="btn btn-primary">
+            <i class="fas fa-eye"> Project</i></a
+          >
         </div>
       </div>
-    </section>
+      <!-- End Project one -->
+      <hr />
+
+      <!-- Start Project two -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img
+              src="./imgs/Utravel.png"
+              class="img-fluid rounded mb-3 mb-md-0"
+              alt="image"
+            />
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h2>Utravel landing page</h2>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            velit error dicta quae repellendus alias saepe aliquam placeat et
+            numquam?
+          </p>
+          <a href="#" class="btn btn-primary">
+            <i class="fab fa-github"> Github</i></a
+          >
+          <a href="#" class="btn btn-primary">
+            <i class="fas fa-eye"> Project</i></a
+          >
+        </div>
+      </div>
+      <!-- End Project two -->
+      <hr />
+
+      <!-- Start Project three -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img
+              src="./imgs/Bridgelt Cloud.png"
+              class="img-fluid rounded mb-3 mb-md-0"
+              alt="image"
+            />
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h2>Bridgelt Cloud</h2>
+          <p class="text-white">
+            Also refered to as Bridge-it Cloud, its a cloud hosting platform
+            intereface that is both responsive and mobile friendly. It is
+            designed with <span class="portfolio-emp">HTML</span> ,
+            <span class="portfolio-emp">CSS</span>, and
+            <span class="portfolio-emp">JavaScript</span>
+          </p>
+          <a href="#" class="btn btn-primary">
+            <i class="fab fa-github"> Github</i></a
+          >
+          <a href="#" class="btn btn-primary">
+            <i class="fas fa-eye"> Project</i></a
+          >
+        </div>
+      </div>
+      <!-- End Project three -->
+      <br />
+      <hr />
+
+      <!-- Start Project three -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img
+              src="./imgs/To Do List.png"
+              class="img-fluid rounded mb-3 mb-md-0"
+              alt="image"
+            />
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h2>Bridgelt Cloud</h2>
+          <p class="text-white">
+            A simpple To-Do List designed with
+            <span class="portfolio-emp">HTML</span> ,
+            <span class="portfolio-emp">Skeleton CSS</span>, and
+            <span class="portfolio-emp">JavaScript</span>
+          </p>
+          <a href="#" class="btn btn-primary">
+            <i class="fab fa-github"> Github</i></a
+          >
+          <a href="#" class="btn btn-primary">
+            <i class="fas fa-eye"> Project</i></a
+          >
+        </div>
+      </div>
+      <!-- End Project  -->
+      <br />
+      <hr />
+
+      <!-- Start Project  -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img
+              src="./imgs/KEXZ ART.png"
+              class="img-fluid rounded mb-3 mb-md-0"
+              alt="image"
+            />
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h2>Kexz Art</h2>
+          <p class="text-white">
+            A responsive artist Portfolio for Kexz Art that is both responsive
+            and mobile friendly. It is designed with
+            <span class="portfolio-emp">HTML</span> ,
+            <span class="portfolio-emp"></span>, and
+            <span class="portfolio-emp">bootstrap</span>
+          </p>
+          <a href="#" class="btn btn-primary">
+            <i class="fab fa-github"> Github</i></a
+          >
+          <a href="#" class="btn btn-primary">
+            <i class="fas fa-eye"> Project</i></a
+          >
+        </div>
+      </div>
+      <!-- End Project  -->
+      <br />
+      <hr />
+
+      <!-- Start Project  -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img
+              src="./imgs/Ipkis Gym Palace Home of fitness.png"
+              class="img-fluid rounded mb-3 mb-md-0"
+              alt="image"
+            />
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h2>Ipkis Gym</h2>
+          <p class="text-white">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+            sit iure laborum adipisci quibusdam a maiores et commodi
+            reprehenderit perspiciatis, sapiente velit obcaecati quo corrupti
+            eos impedit harum numquam necessitatibus.. It is designed with
+            <span class="portfolio-emp">HTML</span> ,
+            <span class="portfolio-emp">Tailwind CSS</span>, and
+          </p>
+          <a href="#" class="btn btn-primary">
+            <i class="fab fa-github"> Github</i></a
+          >
+          <a href="#" class="btn btn-primary">
+            <i class="fas fa-eye"> Project</i></a
+          >
+        </div>
+      </div>
+      <!-- End Project  -->
+      <br />
+    </div>
+    <!-- end Container -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -246,5 +424,10 @@
       </ul>
     </footer>
     <script src="./js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
