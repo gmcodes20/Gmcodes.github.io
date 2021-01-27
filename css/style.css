@@ -137,7 +137,7 @@ strong {
 /* header */
 
 /* Navigation */
-nav {
+.inav {
   position: sticky;
   top: 0px;
   height: 10vh;
