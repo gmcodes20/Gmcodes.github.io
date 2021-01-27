@@ -468,16 +468,17 @@ strong {
 /*Footer*/
 
 .footer {
-  display: flex;
-  align-content: space-between;
-  justify-content: space-between;
+  /* display: flex; */
+  /* align-content: space-between;
+  justify-content: space-between; */
   background: var(--clr-dark);
   color: var(--clr-accent);
+  overflow: hidden;
   text-align: center;
-  padding: 2.5em 5em;
+  padding: 2.5em 5rem;
   font-weight: var(--fw-bold);
-  width: 100vw;
-  height: 200px;
+  width: 100%;
+  height: 300px;
   position: relative;
   bottom: 0;
   transition: all 0.8s ease-out;
@@ -516,7 +517,7 @@ strong {
   text-align: left;
   height: 100%;
   padding-right: 20px;
-  border-right: 2px solid white;
+  /* border-right: 2px solid white; */
 }
 
 .social-icons p {
@@ -546,7 +547,7 @@ strong {
 
 /* Menu media  */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .icons {
     margin-top: 10px;
     grid-area: icons;
@@ -633,7 +634,13 @@ strong {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
   }
-}
+
+  .social-list {
+    font-size: 10px;
+    padding: 5px;
+    flex-direction: row;
+  }
+ 
 #work small {
   text-align: left;
   font-size: 2rem;
