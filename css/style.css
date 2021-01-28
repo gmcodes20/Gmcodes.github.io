@@ -312,13 +312,14 @@ strong {
   .section__subtitle--intro {
     align-self: start;
     grid-column: -1 / 1;
-
+    overflow: hidden;
     grid-row: 2;
     text-align: center;
     position: relative;
     left: -3.5em;
-    padding-left: 200px;
-    width: calc(100% + 12.5em);
+    font-size: 15px;
+    padding-left: 300px;
+    width: calc(100% + 3em);
     margin-bottom: 0.5em;
   }
 }
@@ -640,10 +641,11 @@ strong {
     padding: 5px;
     flex-direction: row;
   }
- 
-#work small {
-  text-align: left;
-  font-size: 2rem;
+
+  #work small {
+    text-align: left;
+    font-size: 2rem;
+  }
 }
 
 .portfolio-emp {
